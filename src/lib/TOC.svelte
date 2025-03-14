@@ -1,7 +1,7 @@
 <!-- src/lib/TOC.svelte -->
-<script>
-  export let chapters = [];
-</script>
+<script><script>
+  export let chapters: { slug: string, title: string }[] = [];
+</script></script>
 
 <nav class="toc">
   <ul>
