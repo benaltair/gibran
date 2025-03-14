@@ -1,14 +1,14 @@
 <!-- src/lib/TOC.svelte -->
-<script><script>
+<script lang="ts">
   export let chapters: { slug: string, title: string }[] = [];
-</script></script>
+</script>
 
 <nav class="toc">
-  <ul>
-    {#each chapters as chapter}
-      <li><a href={"#" + chapter.slug}>{chapter.title}</a></li>
-    {/each}
-  </ul>
+    <ul>
+        {#each chapters as chapter (chapter.slug)}
+          <li><a href={"#" + chapter.slug}>{chapter.title}</a></li>
+        {/each}
+      </ul>
 </nav>
 
 <style>

@@ -8,8 +8,8 @@
 </svelte:head>
 
 <header id="top">
-  <h1>The Prophet</h1>
-  <h2>Khalil Gibran</h2>
+    <h1>The Prophet</h1>
+    <h2>Khalil Gibran</h2>
 </header>
 
 <slot />

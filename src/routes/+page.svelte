@@ -71,7 +71,7 @@
 <Toc {chapters} />
 
 <main>
-  {#each chapters as chapter}
+  {#each chapters as chapter (chapter.slug)}
     <section class="chapter" id={chapter.slug}>
       <svelte:component this={chapter.component} />
     </section>
