@@ -1,38 +1,23 @@
-# sv
+# gibran
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+SvelteKit 2 + Svelte 5 app with mdsvex. Configured for Cloudflare via `@sveltejs/adapter-cloudflare`.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+## Develop
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+## Build
 
 ```bash
 npm run build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+## Notes
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- Adapter: Cloudflare (`@sveltejs/adapter-cloudflare`).
+- Content: mdsvex enabled (see `svelte.config.js`, `extensions: ['.svelte', '.svx']`).
+- Utilities: `cheerio` and `turndown` are available for HTML parsing/markdown conversion.
